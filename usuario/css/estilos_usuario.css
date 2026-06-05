@@ -1,0 +1,212 @@
+.tarjeta-presentacion {
+    max-width: 600px;
+    margin: 3rem auto 2rem;
+    padding: 2rem;
+}
+
+.tarjeta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.tarjeta p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.tarjeta strong {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.formulario-hogar {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.persona-fields {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+}
+
+.persona-fields h4 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.pregunta-group {
+    display: block;
+    height: auto;
+    margin: 1.5rem 0;
+}
+
+.pregunta-izquierda {
+    display: flex;
+    flex-direction: column; 
+    gap: 12px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;    /* Alinea el checkbox perfectamente con el texto */
+    gap: 10px;
+    height: auto;
+}
+.checkbox-group input[type="checkbox"] {
+    width: 20px;            /* Tamaño fijo para que no se estiren */
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+    line-height: 1;         /* Alineación vertical del texto */
+}
+
+.detalles {
+    margin-top: 1rem;
+    display: none;
+}
+
+.botones-derecha {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-medicinas, .btn-problemas {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    width: 70px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.btn-medicinas {
+    background: #28a745;
+    color: white;
+}
+
+.btn-problemas {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-medicinas:hover {
+    background: #218838;
+}
+
+.btn-problemas:hover {
+    background: #c82333;
+}
+
+.gas-section {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+
+.gas-section legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 0.5rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+
+
+.medicinas-grid {
+    display: grid;
+    /* 3 columnas en pantallas normales */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 8px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+}
+
+.medicinas-grid label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem; /* Un poco más pequeño para que quepan bien */
+    color: #333;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.medicinas-grid label:hover {
+    background: #e9ecef;
+}
+
+@media (max-width: 600px) {
+    .medicinas-grid {
+        grid-template-columns: 1fr;
+    }
+}
